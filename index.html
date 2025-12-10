@@ -4,47 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0f172a" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
 
+  <!-- Highwire / Google Scholar -->
   <meta name="citation_journal_title" content="Revista Duendismo Cultural" />
   <meta name="citation_publisher" content="Centro de Estudios Culturales Emergentes – Ecuador" />
-  <meta name="citation_issn" content="0000-0000" /> <meta name="citation_language" content="es" />
-  <meta name="citation_keywords" content="estudios culturales, duendismo, tradición inventada, turismo, patrimonio" />
+  <meta name="citation_issn" content="0000-0000" />
+  <meta name="citation_language" content="es" />
+  <meta name="citation_keywords" content="estudios culturales, duendismo, tradición inventada, turismo, patrimonio, Baños de Agua Santa" />
 
+  <!-- Dublin Core -->
   <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
   <meta name="DC.title" content="Revista Duendismo Cultural" />
-  <meta name="DC.creator" content="Centro de Estudios Culturales Emergentes" />
-  <meta name="DC.subject" content="Cultural Studies" />
-  <meta name="DC.description" content="Publicación académica bilingüe sobre fenómenos culturales, duendismo y turismo." />
+  <meta name="DC.creator" content="Centro de Estudios Culturales Emergentes – Ecuador" />
+  <meta name="DC.subject" content="Cultural Studies; Tourism; Heritage; Duendismo" />
+  <meta name="DC.description" content="Publicación académica bilingüe sobre fenómenos culturales, duendismo y turismo en Ecuador y Latinoamérica." />
   <meta name="DC.publisher" content="Centro de Estudios Culturales Emergentes – Ecuador" />
   <meta name="DC.type" content="Text.Serial.Journal" />
   <meta name="DC.rights" content="Creative Commons BY-NC-SA 4.0" />
 
   <title>Revista Duendismo Cultural | Journal of Cultural Duendismo</title>
-  <meta name="description" content="Revista científica bilingüe (Peer-reviewed). Análisis crítico del duendismo, turismo y apropiación simbólica en Latinoamérica." />
+  <meta name="description" content="Revista científica bilingüe (Diamond Open Access). Análisis crítico del duendismo, turismo y apropiación simbólica en Latinoamérica." />
   <link rel="canonical" href="https://duendismocultural.org/" />
-  
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Revista Duendismo Cultural" />
   <meta property="og:title" content="Revista Duendismo Cultural — Investigación y Crítica" />
-  <meta property="og:description" content="Plataforma de investigación académica sobre la invención de tradiciones y fenómenos turísticos." />
+  <meta property="og:description" content="Plataforma de investigación académica sobre la invención de tradiciones, duendismo y fenómenos turísticos." />
   <meta property="og:url" content="https://duendismocultural.org/" />
   <meta property="og:image" content="https://duendismocultural.org/img/og-journal-cover.jpg" />
 
+  <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" />
 
   <style>
     :root {
-      /* Paleta Institucional */
-      --color-primary: #0f172a;    /* Slate 900 (Autoridad) */
-      --color-secondary: #0d9488;  /* Teal 600 (Acento académico) */
-      --color-text: #334155;       /* Slate 700 */
+      --color-primary: #0f172a;
+      --color-secondary: #0d9488;
+      --color-text: #334155;
       --color-bg: #ffffff;
-      --color-light: #f1f5f9;      /* Slate 100 */
-      
-      /* Tipografía */
-      --font-serif: "Merriweather", "Times New Roman", Serif; /* Lectura académica */
-      --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; /* UI */
-      
+      --color-light: #f1f5f9;
+      --font-serif: "Merriweather", "Times New Roman", Serif;
+      --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       --container-width: 1080px;
     }
 
@@ -58,7 +60,6 @@
       line-height: 1.6;
     }
 
-    /* Top Bar (Idioma y Login) */
     .top-bar {
       background: var(--color-primary);
       color: white;
@@ -67,6 +68,9 @@
       text-align: right;
     }
     .top-bar .container {
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
       display: flex;
       justify-content: flex-end;
       gap: 1.5rem;
@@ -74,7 +78,6 @@
     .top-bar a { color: #cbd5e1; text-decoration: none; }
     .top-bar a:hover { color: white; }
 
-    /* Header Principal */
     header {
       background: var(--color-bg);
       border-bottom: 1px solid #e2e8f0;
@@ -95,6 +98,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 1.5rem;
     }
 
     .journal-title {
@@ -122,6 +126,7 @@
       gap: 1.5rem;
       padding: 0;
       margin: 0;
+      align-items: center;
     }
     nav a {
       text-decoration: none;
@@ -132,7 +137,6 @@
     }
     nav a:hover { color: var(--color-secondary); }
 
-    /* Botón de Acción */
     .btn-submit {
       background: var(--color-secondary);
       color: white;
@@ -142,7 +146,6 @@
     }
     .btn-submit:hover { background: #0f766e; color: white; }
 
-    /* Hero Section / Current Issue */
     .hero {
       background: white;
       padding: 4rem 0;
@@ -161,10 +164,9 @@
     }
     .hero-meta strong { color: var(--color-secondary); }
 
-    /* Estructura de contenido */
     .grid-layout {
       display: grid;
-      grid-template-columns: 2.5fr 1fr; /* Contenido principal / Sidebar */
+      grid-template-columns: 2.5fr 1fr;
       gap: 3rem;
       margin-top: 3rem;
       margin-bottom: 4rem;
@@ -199,7 +201,6 @@
       font-size: 0.75rem;
     }
 
-    /* Sidebar */
     .sidebar-box {
       background: white;
       border: 1px solid #e2e8f0;
@@ -214,7 +215,6 @@
     .sidebar-list a { text-decoration: none; color: var(--color-text); }
     .sidebar-list a:hover { color: var(--color-secondary); }
 
-    /* Footer */
     footer {
       background: var(--color-primary);
       color: #94a3b8;
@@ -222,7 +222,7 @@
       font-size: 0.85rem;
     }
     footer a { color: #cbd5e1; text-decoration: none; }
-    footer .container {
+    footer .footer-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
@@ -230,12 +230,12 @@
 
     @media (max-width: 768px) {
       .grid-layout { grid-template-columns: 1fr; }
-      nav ul { display: none; } /* Mobile menu simplified */
-      .top-bar { text-align: center; }
+      nav ul { display: none; }
       .top-bar .container { justify-content: center; }
     }
   </style>
 
+  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -251,12 +251,12 @@
           {
             "@type": "Person",
             "name": "Fito Girolami",
-            "affiliation": "Centro de Estudios Culturales Emergentes"
+            "affiliation": "Centro de Estudios Culturales Emergentes – Ecuador"
           },
           {
             "@type": "Person",
             "name": "Catalina Lucz-Ligeti",
-            "affiliation": "Centro de Estudios Culturales Emergentes"
+            "affiliation": "Centro de Estudios Culturales Emergentes – Ecuador"
           }
         ],
         "inLanguage": ["es", "en"],
@@ -273,7 +273,7 @@
         "@type": "WebSite",
         "@id": "https://duendismocultural.org/#website",
         "url": "https://duendismocultural.org/",
-        "name": "Revista Duendismo Cultural OJS",
+        "name": "Revista Duendismo Cultural",
         "publisher": { "@id": "https://estudiosculturalesemergentes.org/#organization" }
       }
     ]
@@ -285,7 +285,7 @@
 
   <div class="top-bar">
     <div class="container">
-      <span>e-ISSN: En trámite</span>
+      <span>e-ISSN: en trámite</span>
       <a href="#">English</a>
       <span>|</span>
       <a href="#">Español</a>
@@ -298,12 +298,12 @@
         Revista Duendismo Cultural
         <span class="journal-subtitle">Investigación · Arte · Memoria Situada</span>
       </a>
-      
+
       <nav>
         <ul>
           <li><a href="#actual">Actual</a></li>
           <li><a href="#archivos">Archivos</a></li>
-          <li><a href="#equipo">Equipo Editorial</a></li>
+          <li><a href="/editorial-board/">Equipo Editorial</a></li>
           <li><a href="#autores">Autores</a></li>
           <li><a href="mailto:submit@duendismocultural.org" class="btn-submit">Enviar Artículo</a></li>
         </ul>
@@ -311,7 +311,7 @@
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="actual">
     <div class="container">
       <div class="hero-meta">
         VOL. 1 NÚM. 1 (2025): <strong>LA INVENCIÓN DEL DUENDE EN LOS ANDES</strong>
@@ -324,105 +324,35 @@
   </section>
 
   <main class="container grid-layout">
-    
     <div class="main-content">
-      
       <section id="scope">
         <h2>Enfoque y Alcance</h2>
         <p>
-          La <em>Revista Duendismo Cultural</em> proporciona un foro académico para la discusión de fenómenos culturales emergentes. Priorizamos investigaciones que utilicen metodologías mixtas (etnografía, análisis visual, investigación basada en artes) para abordar:
+          La <em>Revista Duendismo Cultural</em> proporciona un foro académico para la discusión de fenómenos culturales emergentes.
+          Priorizamos investigaciones que utilicen metodologías mixtas (etnografía, análisis visual, investigación basada en artes) para abordar:
         </p>
         <ul>
-          <li>La genealogía de símbolos locales (Duendes, mitos urbanos).</li>
+          <li>La genealogía de símbolos locales (duendes, mitos urbanos y otras figuras feéricas).</li>
           <li>Sociología del turismo y mercantilización de la memoria.</li>
-          <li>Derechos de autor frente al patrimonio inmaterial.</li>
+          <li>Autoría, derechos culturales y patrimonio inmaterial en conflicto.</li>
         </ul>
       </section>
 
       <section id="articles-preview">
         <h2>Artículos Destacados (Pre-print)</h2>
-        
+
         <article class="article-preview">
           <div class="article-meta">ARTÍCULO DE INVESTIGACIÓN</div>
-          <h3><a href="#" style="text-decoration:none; color:inherit;">Del taller al souvenir: Trazabilidad de la iconografía del duende en Baños</a></h3>
+          <h3><a href="#" style="text-decoration:none; color:inherit;">Del taller al souvenir: trazabilidad de la iconografía del duende en Baños</a></h3>
           <div class="article-meta">
-            <span>Fito Girolami</span> | 
+            <span>Fito Girolami</span> ·
             <span class="doi-link">DOI: 10.0000/rdc.2025.v1.01</span>
           </div>
-          <p>Análisis longitudinal sobre la transformación de la obra de autor en producto turístico masivo entre 1990 y 2024.</p>
+          <p>Análisis longitudinal sobre la transformación de la obra de autor en producto turístico masivo entre 2013 y la actualidad.</p>
           <a href="#" style="font-weight:600; font-size:0.9rem; color:var(--color-secondary);">PDF (Español)</a> &nbsp;
           <a href="#" style="font-weight:600; font-size:0.9rem; color:var(--color-secondary);">Abstract (English)</a>
         </article>
 
         <article class="article-preview">
           <div class="article-meta">ENSAYO VISUAL</div>
-          <h3><a href="#" style="text-decoration:none; color:inherit;">Simulacros de identidad: La "tradición" como estrategia de marketing territorial</a></h3>
-          <div class="article-meta">
-            <span>Catalina Lucz-Ligeti</span> | 
-            <span class="doi-link">DOI: 10.0000/rdc.2025.v1.02</span>
-          </div>
-          <p>Un estudio comparativo sobre cómo las narrativas visuales reconfiguran la percepción histórica del territorio.</p>
-        </article>
-
-      </section>
-    </div>
-
-    <aside class="sidebar">
-      
-      <div class="sidebar-box">
-        <h4>Información</h4>
-        <ul class="sidebar-list">
-          <li><a href="#">Para lectores</a></li>
-          <li><a href="#">Para autores</a></li>
-          <li><a href="#">Para bibliotecarios</a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-box">
-        <h4>Indexación & Archivo</h4>
-        <p style="font-size:0.85rem; color:#64748b;">
-          Esta revista utiliza <strong>LOCKSS</strong> para crear un sistema de archivo distribuido.
-        </p>
-        <p style="font-size:0.85rem;">
-          Repositorio OAI-PMH: <br>
-          <a href="#" style="color:var(--color-secondary);">Link a Zenodo Community</a>
-        </p>
-      </div>
-
-      <div class="sidebar-box">
-        <h4>Licencia</h4>
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-          <img alt="Licencia Creative Commons" style="border-width:0; width:100%; opacity:0.8;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
-        </a>
-        <p style="font-size:0.75rem; margin-top:0.5rem; line-height:1.4;">
-          Esta obra está bajo una Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.
-        </p>
-      </div>
-
-    </aside>
-
-  </main>
-
-  <footer>
-    <div class="container">
-      <div>
-        <h5 style="color:white; font-size:1rem; margin-top:0;">Revista Duendismo Cultural</h5>
-        <p>
-          Editada por el <strong>Centro de Estudios Culturales Emergentes — Ecuador</strong>.<br>
-          Baños de Agua Santa, Tungurahua.<br>
-          <a href="mailto:editorial@duendismocultural.org">editorial@duendismocultural.org</a>
-        </p>
-      </div>
-      <div style="text-align:right;">
-        <p>Plataforma de Ciencia Abierta.</p>
-        <p>© <span id="year"></span>. Open Access.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
-</body>
-</html>
+          <h3><a href="#" style="text-decoration:none; color:inherit;">Simulacros de identidad: la “tradición” como estrategia de ma
