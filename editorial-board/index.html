@@ -170,6 +170,11 @@
     footer .inner {
       padding: 0;
     }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
     @media (max-width: 640px) {
       .inner { flex-direction: column; align-items: flex-start; }
     }
@@ -297,8 +302,43 @@
       provincia de Tungurahua.
     </p>
     <p>
-      El soporte técnico y de infraestructura digital se articula a través del ecosistema:
+      El soporte técnico y de infraestructura digital se articula a través del siguiente ecosistema de proyectos:
     </p>
     <ul>
-      <li><a href="https://estudiosculturalesemergentes.org/" target="_blank" rel="noopener">Centro de Estudios Culturales Emergentes – Ecuador</a></li>
-      <li><a href="https://lacasadelduende.art/" target="_blank" rel="noopener">_
+      <li>
+        <a href="https://estudiosculturalesemergentes.org/" target="_blank" rel="noopener">
+          Centro de Estudios Culturales Emergentes – Ecuador
+        </a>
+      </li>
+      <li>
+        <a href="https://lacasadelduende.art/" target="_blank" rel="noopener">
+          La Casa del Duende & La Aldea Mágica
+        </a>
+      </li>
+      <li>
+        <a href="https://www.banos.travel/" target="_blank" rel="noopener">
+          Baños.travel — Portal cultural independiente
+        </a>
+      </li>
+      <li>
+        <a href="https://zenodo.org/communities/centro-de-estudios-culturales-emergentes-ecuador"
+           target="_blank" rel="noopener">
+          Comunidad científica en Zenodo (CECE – Ecuador)
+        </a>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <div class="inner">
+      <div>
+        © <span id="year"></span> Revista Duendismo Cultural · Centro de Estudios Culturales Emergentes – Ecuador.
+      </div>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+</body>
+</html>
