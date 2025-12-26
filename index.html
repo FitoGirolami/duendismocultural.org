@@ -9,7 +9,6 @@
   <!-- Highwire / Google Scholar (Portada de la revista / número actual) -->
   <meta name="citation_journal_title" content="Revista Duendismo Cultural" />
   <meta name="citation_publisher" content="Centro de Estudios Culturales Emergentes – Ecuador" />
-  <!-- Importante: no declarar ISSN si aún no está asignado -->
   <meta name="citation_language" content="es" />
   <meta name="citation_keywords" content="estudios culturales, duendismo, tradición inventada, turismo, patrimonio, Baños de Agua Santa" />
 
@@ -218,6 +217,29 @@
       font-size: 0.75rem;
     }
 
+    .links-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      align-items: center;
+    }
+    .btn-soft {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--color-secondary);
+      text-decoration: none;
+      border: 1px solid rgba(13,148,136,.25);
+      background: rgba(13,148,136,.06);
+      padding: 8px 10px;
+      border-radius: 6px;
+    }
+    .btn-soft:hover {
+      border-color: rgba(13,148,136,.55);
+      background: rgba(13,148,136,.10);
+    }
+
     .sidebar-box {
       background: white;
       border: 1px solid #e2e8f0;
@@ -252,7 +274,7 @@
     }
   </style>
 
-  <!-- Schema.org (sin “Volumen 0” / sin “preprint”) -->
+  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -405,11 +427,14 @@
       <section id="articles-preview">
         <h2>Vol. 1 · Núm. 1 (2025) — Artículos publicados (Texto completo)</h2>
 
+        <!-- Nota: si ya creaste páginas internas por artículo, actualiza estos href "/articulos/..." con tus slugs reales.
+             Mientras tanto, quedan rutas consistentes por DOI (no rompen tu estructura). -->
+
         <!-- Artículo 1 -->
         <article class="article-preview">
           <div class="article-meta">ARTÍCULO DE INVESTIGACIÓN · TEXTO COMPLETO</div>
           <h3>
-            <a href="https://doi.org/10.5281/zenodo.17888205" style="text-decoration:none; color:inherit;">
+            <a href="/articulos/10-5281-zenodo-17888205/" style="text-decoration:none; color:inherit;">
               Fenomenología de la Reacción Autoral frente a la Apropiación Turística en Baños de Agua Santa
             </a>
           </h3>
@@ -422,16 +447,17 @@
             Análisis de la reacción autoral frente a la apropiación turística del símbolo contemporáneo del duende en Baños de Agua Santa,
             examinando tensiones entre creación artística, explotación comercial y borrado institucional mediante el marco de “tradición inventada”.
           </p>
-          <a href="https://doi.org/10.5281/zenodo.17888205" style="font-weight:600; font-size:0.9rem; color:var(--color-secondary);">
-            Acceder al artículo (Zenodo)
-          </a>
+          <div class="links-row">
+            <a class="btn-soft" href="/articulos/10-5281-zenodo-17888205/">Ver página del artículo</a>
+            <a class="btn-soft" href="https://doi.org/10.5281/zenodo.17888205" target="_blank" rel="noopener">Acceder vía DOI (Zenodo)</a>
+          </div>
         </article>
 
         <!-- Artículo 2 -->
         <article class="article-preview">
           <div class="article-meta">ARTÍCULO DE INVESTIGACIÓN · TEXTO COMPLETO</div>
           <h3>
-            <a href="https://doi.org/10.5281/zenodo.17917843" style="text-decoration:none; color:inherit;">
+            <a href="/articulos/10-5281-zenodo-17917843/" style="text-decoration:none; color:inherit;">
               Tradición inventada en Baños de Agua Santa: análisis académico del fenómeno de los duendes y su apropiación turística (2013–2025)
             </a>
           </h3>
@@ -443,16 +469,17 @@
             Lectura crítica del fenómeno de los duendes en Baños desde la teoría de la tradición inventada: genealogía (2013–2018),
             aparición de copias y distorsiones (2018–2025), y mecanismos de legitimación institucional y social.
           </p>
-          <a href="https://doi.org/10.5281/zenodo.17917843" style="font-weight:600; font-size:0.9rem; color:var(--color-secondary);">
-            Acceder al artículo (Zenodo)
-          </a>
+          <div class="links-row">
+            <a class="btn-soft" href="/articulos/10-5281-zenodo-17917843/">Ver página del artículo</a>
+            <a class="btn-soft" href="https://doi.org/10.5281/zenodo.17917843" target="_blank" rel="noopener">Acceder vía DOI (Zenodo)</a>
+          </div>
         </article>
 
         <!-- Artículo 3 -->
         <article class="article-preview">
           <div class="article-meta">ARTÍCULO · TEXTO COMPLETO</div>
           <h3>
-            <a href="https://doi.org/10.5281/zenodo.16888178" style="text-decoration:none; color:inherit;">
+            <a href="/articulos/10-5281-zenodo-16888178/" style="text-decoration:none; color:inherit;">
               Informe histórico y cultural de Baños de Agua Santa, Ecuador
             </a>
           </h3>
@@ -464,16 +491,17 @@
             Síntesis histórica y cultural del territorio de Baños de Agua Santa como base contextual para el análisis de transformaciones
             simbólicas, turismo y disputas de memoria.
           </p>
-          <a href="https://doi.org/10.5281/zenodo.16888178" style="font-weight:600; font-size:0.9rem; color:var(--color-secondary);">
-            Acceder al artículo (Zenodo)
-          </a>
+          <div class="links-row">
+            <a class="btn-soft" href="/articulos/10-5281-zenodo-16888178/">Ver página del artículo</a>
+            <a class="btn-soft" href="https://doi.org/10.5281/zenodo.16888178" target="_blank" rel="noopener">Acceder vía DOI (Zenodo)</a>
+          </div>
         </article>
 
         <!-- Artículo 4 -->
         <article class="article-preview">
           <div class="article-meta">ARTÍCULO DE INVESTIGACIÓN · TEXTO COMPLETO</div>
           <h3>
-            <a href="https://doi.org/10.5281/zenodo.16732811" style="text-decoration:none; color:inherit;">
+            <a href="/articulos/10-5281-zenodo-16732811/" style="text-decoration:none; color:inherit;">
               Del mito disperso al símbolo visible: la expresión artística de los duendes en Ecuador y la génesis de su imaginario contemporáneo
             </a>
           </h3>
@@ -485,16 +513,17 @@
             Estudio sobre el pasaje del duende como mito fragmentario a símbolo visible mediante expresiones artísticas contemporáneas,
             analizando procesos de institucionalización cultural y apropiación del imaginario.
           </p>
-          <a href="https://doi.org/10.5281/zenodo.16732811" style="font-weight:600; font-size:0.9rem; color:var(--color-secondary);">
-            Acceder al artículo (Zenodo)
-          </a>
+          <div class="links-row">
+            <a class="btn-soft" href="/articulos/10-5281-zenodo-16732811/">Ver página del artículo</a>
+            <a class="btn-soft" href="https://doi.org/10.5281/zenodo.16732811" target="_blank" rel="noopener">Acceder vía DOI (Zenodo)</a>
+          </div>
         </article>
 
         <!-- Artículo 5 -->
         <article class="article-preview">
           <div class="article-meta">ARTÍCULO DE INVESTIGACIÓN · TEXTO COMPLETO</div>
           <h3>
-            <a href="https://doi.org/10.5281/zenodo.17851097" style="text-decoration:none; color:inherit;">
+            <a href="/articulos/10-5281-zenodo-17851097/" style="text-decoration:none; color:inherit;">
               Duendismo Cultural: Patrimonio Emergente, Simulacro Turístico y Autoría Disputada en Baños de Agua Santa (2013–2025)
             </a>
           </h3>
@@ -506,14 +535,14 @@
             Propuesta conceptual que articula duendismo cultural, patrimonio emergente y disputa de autoría en el marco de la economía simbólica
             del turismo, con foco en Baños de Agua Santa (2013–2025).
           </p>
-          <a href="https://doi.org/10.5281/zenodo.17851097" style="font-weight:600; font-size:0.9rem; color:var(--color-secondary);">
-            Acceder al artículo (Zenodo)
-          </a>
+          <div class="links-row">
+            <a class="btn-soft" href="/articulos/10-5281-zenodo-17851097/">Ver página del artículo</a>
+            <a class="btn-soft" href="https://doi.org/10.5281/zenodo.17851097" target="_blank" rel="noopener">Acceder vía DOI (Zenodo)</a>
+          </div>
         </article>
 
       </section>
 
-      <!-- NUEVO: Archivos (para que el menú funcione de verdad) -->
       <section id="archivos" style="margin-top:3rem;">
         <h2>Archivos</h2>
         <div class="article-preview" style="border-bottom:none; padding-bottom:0;">
@@ -525,16 +554,15 @@
             Número actual en acceso abierto. Artículos en texto completo disponibles vía DOI (Zenodo).
           </p>
           <ul style="padding-left:1.2rem; margin:0;">
-            <li><a href="https://doi.org/10.5281/zenodo.17888205">10.5281/zenodo.17888205</a></li>
-            <li><a href="https://doi.org/10.5281/zenodo.17917843">10.5281/zenodo.17917843</a></li>
-            <li><a href="https://doi.org/10.5281/zenodo.16888178">10.5281/zenodo.16888178</a></li>
-            <li><a href="https://doi.org/10.5281/zenodo.16732811">10.5281/zenodo.16732811</a></li>
-            <li><a href="https://doi.org/10.5281/zenodo.17851097">10.5281/zenodo.17851097</a></li>
+            <li><a href="https://doi.org/10.5281/zenodo.17888205" target="_blank" rel="noopener">10.5281/zenodo.17888205</a></li>
+            <li><a href="https://doi.org/10.5281/zenodo.17917843" target="_blank" rel="noopener">10.5281/zenodo.17917843</a></li>
+            <li><a href="https://doi.org/10.5281/zenodo.16888178" target="_blank" rel="noopener">10.5281/zenodo.16888178</a></li>
+            <li><a href="https://doi.org/10.5281/zenodo.16732811" target="_blank" rel="noopener">10.5281/zenodo.16732811</a></li>
+            <li><a href="https://doi.org/10.5281/zenodo.17851097" target="_blank" rel="noopener">10.5281/zenodo.17851097</a></li>
           </ul>
         </div>
       </section>
 
-      <!-- NUEVO: Autores (para que el menú funcione de verdad) -->
       <section id="autores" style="margin-top:3rem;">
         <h2>Autores</h2>
         <div class="article-preview" style="border-bottom:none; padding-bottom:0;">
@@ -544,7 +572,8 @@
             <strong>Catalina Lucz-Ligeti</strong> · Centro de Estudios Culturales Emergentes – Ecuador
           </p>
           <p style="margin-top:0;">
-            La revista recibe contribuciones externas. Para envío de manuscritos: <a href="mailto:submit@duendismocultural.org">submit@duendismocultural.org</a>
+            La revista recibe contribuciones externas. Para envío de manuscritos:
+            <a href="mailto:submit@duendismocultural.org">submit@duendismocultural.org</a>
           </p>
         </div>
       </section>
@@ -571,11 +600,11 @@
           Artículos disponibles vía DOI (Zenodo).
         </p>
         <ul class="sidebar-list" style="margin-top:0.75rem;">
-          <li><a href="https://doi.org/10.5281/zenodo.17888205">10.5281/zenodo.17888205</a></li>
-          <li><a href="https://doi.org/10.5281/zenodo.17917843">10.5281/zenodo.17917843</a></li>
-          <li><a href="https://doi.org/10.5281/zenodo.16888178">10.5281/zenodo.16888178</a></li>
-          <li><a href="https://doi.org/10.5281/zenodo.16732811">10.5281/zenodo.16732811</a></li>
-          <li><a href="https://doi.org/10.5281/zenodo.17851097">10.5281/zenodo.17851097</a></li>
+          <li><a href="https://doi.org/10.5281/zenodo.17888205" target="_blank" rel="noopener">10.5281/zenodo.17888205</a></li>
+          <li><a href="https://doi.org/10.5281/zenodo.17917843" target="_blank" rel="noopener">10.5281/zenodo.17917843</a></li>
+          <li><a href="https://doi.org/10.5281/zenodo.16888178" target="_blank" rel="noopener">10.5281/zenodo.16888178</a></li>
+          <li><a href="https://doi.org/10.5281/zenodo.16732811" target="_blank" rel="noopener">10.5281/zenodo.16732811</a></li>
+          <li><a href="https://doi.org/10.5281/zenodo.17851097" target="_blank" rel="noopener">10.5281/zenodo.17851097</a></li>
         </ul>
       </div>
 
@@ -588,7 +617,7 @@
           Comunidad científica:
           <br />
           <a href="https://zenodo.org/communities/centro-de-estudios-culturales-emergentes-ecuador"
-             style="color:var(--color-secondary);">
+             style="color:var(--color-secondary);" target="_blank" rel="noopener">
             Zenodo — CECE Ecuador
           </a>
         </p>
@@ -596,7 +625,7 @@
 
       <div class="sidebar-box">
         <h4>Licencia</h4>
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">
           <img alt="Licencia Creative Commons" style="border-width:0; width:100%; opacity:0.8;"
                src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
         </a>
