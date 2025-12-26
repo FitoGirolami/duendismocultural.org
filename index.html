@@ -6,13 +6,12 @@
   <meta name="theme-color" content="#0f172a" />
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
 
-  <!-- Highwire / Google Scholar -->
+  <!-- Highwire / Google Scholar (Portada de la revista / número actual) -->
   <meta name="citation_journal_title" content="Revista Duendismo Cultural" />
   <meta name="citation_publisher" content="Centro de Estudios Culturales Emergentes – Ecuador" />
-  <meta name="citation_issn" content="0000-0000" />
+  <!-- Importante: no declarar ISSN si aún no está asignado -->
   <meta name="citation_language" content="es" />
   <meta name="citation_keywords" content="estudios culturales, duendismo, tradición inventada, turismo, patrimonio, Baños de Agua Santa" />
-  <meta name="citation_doi" content="10.5281/zenodo.17888205" />
 
   <!-- Dublin Core -->
   <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
@@ -24,18 +23,17 @@
   <meta name="DC.type" content="Text.Serial.Journal" />
   <meta name="DC.rights" content="Creative Commons BY-NC-SA 4.0" />
 
-  <title>Revista Duendismo Cultural | Journal of Cultural Duendismo</title>
-  <meta name="description" content="Revista científica bilingüe (Diamond Open Access). Análisis crítico del duendismo, turismo y apropiación simbólica en Latinoamérica." />
+  <title>Revista Duendismo Cultural | Vol. 1 Núm. 1 (2025)</title>
+  <meta name="description" content="Revista científica bilingüe (Diamond Open Access). Estudios críticos sobre duendismo cultural, turismo y apropiación simbólica." />
   <link rel="canonical" href="https://duendismocultural.org/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Revista Duendismo Cultural" />
-  <meta property="og:title" content="Revista Duendismo Cultural — Investigación y Crítica" />
-  <meta property="og:description" content="Plataforma de investigación académica sobre la invención de tradiciones, duendismo y fenómenos turísticos." />
+  <meta property="og:title" content="Revista Duendismo Cultural — Vol. 1 Núm. 1 (2025)" />
+  <meta property="og:description" content="Plataforma de investigación académica sobre tradición inventada, duendismo cultural y fenómenos turísticos." />
   <meta property="og:url" content="https://duendismocultural.org/" />
   <meta property="og:image" content="https://duendismocultural.org/img/og-journal-cover.jpg" />
-  <meta property="article:doi" content="10.5281/zenodo.17888205" />
 
   <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" />
@@ -247,35 +245,70 @@
         "@id": "https://duendismocultural.org/#journal",
         "name": "Revista Duendismo Cultural",
         "alternateName": "Journal of Cultural Duendismo",
-        "issn": "0000-0000",
         "publisher": { "@id": "https://estudiosculturalesemergentes.org/#organization" },
         "editor": [
-          {
-            "@type": "Person",
-            "name": "Fito Girolami",
-            "affiliation": "Centro de Estudios Culturales Emergentes – Ecuador"
-          },
-          {
-            "@type": "Person",
-            "name": "Catalina Lucz-Ligeti",
-            "affiliation": "Centro de Estudios Culturales Emergentes – Ecuador"
-          }
+          { "@type": "Person", "name": "Fito Girolami", "affiliation": "Centro de Estudios Culturales Emergentes – Ecuador" },
+          { "@type": "Person", "name": "Catalina Lucz-Ligeti", "affiliation": "Centro de Estudios Culturales Emergentes – Ecuador" }
         ],
-        "inLanguage": ["es", "en"],
+        "inLanguage": ["es","en"],
         "isAccessibleForFree": true,
         "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
       },
+      {
+        "@type": "PublicationIssue",
+        "@id": "https://duendismocultural.org/#issue-v1n1-2025",
+        "name": "Vol. 1 · Núm. 1 (2025)",
+        "isPartOf": { "@id": "https://duendismocultural.org/#journal" },
+        "datePublished": "2025",
+        "inLanguage": "es"
+      },
+
       {
         "@type": "ScholarlyArticle",
         "name": "Fenomenología de la Reacción Autoral frente a la Apropiación Turística en Baños de Agua Santa",
         "url": "https://doi.org/10.5281/zenodo.17888205",
         "identifier": "10.5281/zenodo.17888205",
-        "isPartOf": {
-          "@id": "https://duendismocultural.org/#journal"
-        },
+        "isPartOf": { "@id": "https://duendismocultural.org/#issue-v1n1-2025" },
         "datePublished": "2025",
         "inLanguage": "es"
       },
+      {
+        "@type": "ScholarlyArticle",
+        "name": "Tradición inventada en Baños de Agua Santa: análisis académico del fenómeno de los duendes y su apropiación turística (2013–2025)",
+        "url": "https://doi.org/10.5281/zenodo.17917843",
+        "identifier": "10.5281/zenodo.17917843",
+        "isPartOf": { "@id": "https://duendismocultural.org/#issue-v1n1-2025" },
+        "datePublished": "2025",
+        "inLanguage": "es"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "name": "Informe histórico y cultural de Baños de Agua Santa, Ecuador",
+        "url": "https://doi.org/10.5281/zenodo.16888178",
+        "identifier": "10.5281/zenodo.16888178",
+        "isPartOf": { "@id": "https://duendismocultural.org/#issue-v1n1-2025" },
+        "datePublished": "2025",
+        "inLanguage": "es"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "name": "Del mito disperso al símbolo visible: la expresión artística de los duendes en Ecuador y la génesis de su imaginario contemporáneo",
+        "url": "https://doi.org/10.5281/zenodo.16732811",
+        "identifier": "10.5281/zenodo.16732811",
+        "isPartOf": { "@id": "https://duendismocultural.org/#issue-v1n1-2025" },
+        "datePublished": "2025",
+        "inLanguage": "es"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "name": "Duendismo Cultural: Patrimonio Emergente, Simulacro Turístico y Autoría Disputada en Baños de Agua Santa (2013–2025)",
+        "url": "https://doi.org/10.5281/zenodo.17851097",
+        "identifier": "10.5281/zenodo.17851097",
+        "isPartOf": { "@id": "https://duendismocultural.org/#issue-v1n1-2025" },
+        "datePublished": "2025",
+        "inLanguage": "es"
+      },
+
       {
         "@type": "Organization",
         "@id": "https://estudiosculturalesemergentes.org/#organization",
@@ -298,10 +331,9 @@
 
   <div class="top-bar">
     <div class="container">
-      <span>e-ISSN: en trámite</span>
-      <a href="#">English</a>
-      <span>|</span>
-      <a href="#">Español</a>
+      <span>ISSN (e-ISSN): en trámite</span>
+      <span>·</span>
+      <span>Acceso Abierto Diamante</span>
     </div>
   </div>
 
@@ -331,7 +363,7 @@
       </div>
       <h1>Estudios críticos sobre turismo, apropiación simbólica y tradición inventada.</h1>
       <p style="max-width: 700px; color: #475569;">
-        Publicación científica de Acceso Abierto Diamante (Diamond Open Access) dedicada a documentar las tensiones entre la creación artística original y su masificación turística en Baños de Agua Santa y Latinoamérica.
+        Publicación científica de Acceso Abierto Diamante (Diamond Open Access) dedicada a documentar tensiones entre creación artística, autoría y masificación turística en Baños de Agua Santa y Latinoamérica.
       </p>
     </div>
   </section>
@@ -352,81 +384,114 @@
       </section>
 
       <section id="articles-preview">
-        <h2>Volumen 0 y Artículos Destacados</h2>
+        <h2>Vol. 1 · Núm. 1 (2025) — Artículos publicados (Texto completo)</h2>
 
-        <!-- NUEVO: Volumen 0 sembrado en Zenodo -->
+        <!-- Artículo 1 -->
         <article class="article-preview">
-          <div class="article-meta">VOLUMEN 0 — PUBLICACIÓN FUNDACIONAL (CON DOI)</div>
+          <div class="article-meta">ARTÍCULO DE INVESTIGACIÓN · TEXTO COMPLETO</div>
           <h3>
-            <a href="https://doi.org/10.5281/zenodo.17888205"
-               style="text-decoration:none; color:inherit;">
-              Fenomenología de la Reacción Autoral frente a la Apropiación Turística en Baños
+            <a href="https://doi.org/10.5281/zenodo.17888205" style="text-decoration:none; color:inherit;">
+              Fenomenología de la Reacción Autoral frente a la Apropiación Turística en Baños de Agua Santa
             </a>
           </h3>
           <div class="article-meta">
-            <span>Fito Girolami</span> ·
-            <span>Catalina Lucz-Ligeti</span> ·
+            <span>Centro de Estudios Culturales Emergentes – Ecuador</span> ·
+            <span>Girolami, Fito</span> ·
             <span class="doi-link">DOI: 10.5281/zenodo.17888205</span>
           </div>
           <p>
-            Documento inaugural que establece el campo del Duendismo Cultural como área de investigación crítica,
-            analizando la autoría, la apropiación mercantil y el reposicionamiento simbólico del fenómeno turístico
-            originado en Baños de Agua Santa.
+            Análisis de la reacción autoral frente a la apropiación turística del símbolo contemporáneo del duende en Baños de Agua Santa,
+            examinando tensiones entre creación artística, explotación comercial y borrado institucional mediante el marco de “tradición inventada”.
           </p>
-          <a href="https://doi.org/10.5281/zenodo.17888205"
-             style="font-weight:600; font-size:0.9rem; color:var(--color-secondary);">
-            Acceder al Volumen 0 (Zenodo)
+          <a href="https://doi.org/10.5281/zenodo.17888205" style="font-weight:600; font-size:0.9rem; color:var(--color-secondary);">
+            Acceder al artículo (Zenodo)
           </a>
         </article>
 
-        <!-- Pre-prints / futuros artículos del Vol. 1 -->
+        <!-- Artículo 2 -->
         <article class="article-preview">
-          <div class="article-meta">ARTÍCULO DE INVESTIGACIÓN · PRE-PRINT</div>
+          <div class="article-meta">ARTÍCULO DE INVESTIGACIÓN · TEXTO COMPLETO</div>
           <h3>
-            <a href="#" style="text-decoration:none; color:inherit;">
-              Del taller al souvenir: trazabilidad de la iconografía del duende en Baños
+            <a href="https://doi.org/10.5281/zenodo.17917843" style="text-decoration:none; color:inherit;">
+              Tradición inventada en Baños de Agua Santa: análisis académico del fenómeno de los duendes y su apropiación turística (2013–2025)
             </a>
           </h3>
           <div class="article-meta">
-            <span>Fito Girolami</span> ·
-            <span class="doi-link">DOI: 10.0000/rdc.2025.v1.01</span>
+            <span>Centro de Estudios Culturales Emergentes – Ecuador</span> ·
+            <span class="doi-link">DOI: 10.5281/zenodo.17917843</span>
           </div>
           <p>
-            Análisis longitudinal sobre la transformación de la obra de autor en producto turístico masivo entre 2013
-            y la actualidad, con énfasis en la circulación de imágenes, discursos institucionales y apropiación del símbolo.
+            Lectura crítica del fenómeno de los duendes en Baños desde la teoría de la tradición inventada: genealogía (2013–2018),
+            aparición de copias y distorsiones (2018–2025), y mecanismos de legitimación institucional y social.
           </p>
-          <a href="#"
-             style="font-weight:600; font-size:0.9rem; color:var(--color-secondary);">
-            PDF (Español)
-          </a>
-          &nbsp;
-          <a href="#"
-             style="font-weight:600; font-size:0.9rem; color:var(--color-secondary);">
-            Abstract (English)
+          <a href="https://doi.org/10.5281/zenodo.17917843" style="font-weight:600; font-size:0.9rem; color:var(--color-secondary);">
+            Acceder al artículo (Zenodo)
           </a>
         </article>
 
+        <!-- Artículo 3 -->
         <article class="article-preview">
-          <div class="article-meta">ENSAYO VISUAL · PRE-PRINT</div>
+          <div class="article-meta">ARTÍCULO · TEXTO COMPLETO</div>
           <h3>
-            <a href="#" style="text-decoration:none; color:inherit;">
-              Simulacros de identidad: la “tradición” como estrategia de marketing territorial
+            <a href="https://doi.org/10.5281/zenodo.16888178" style="text-decoration:none; color:inherit;">
+              Informe histórico y cultural de Baños de Agua Santa, Ecuador
             </a>
           </h3>
           <div class="article-meta">
-            <span>Catalina Lucz-Ligeti</span> ·
-            <span class="doi-link">DOI: 10.0000/rdc.2025.v1.02</span>
+            <span>Centro de Estudios Culturales Emergentes – Ecuador</span> ·
+            <span class="doi-link">DOI: 10.5281/zenodo.16888178</span>
           </div>
           <p>
-            Ensayo visual y textual que compara la construcción de “tradiciones” turísticas en Baños de Agua Santa con otros
-            casos latinoamericanos, observando cómo el dispositivo visual del duende se integra a campañas oficiales, escenografías
-            urbanas y narrativas institucionales que reescriben la memoria local.
+            Síntesis histórica y cultural del territorio de Baños de Agua Santa como base contextual para el análisis de transformaciones
+            simbólicas, turismo y disputas de memoria.
           </p>
-          <a href="#"
-             style="font-weight:600; font-size:0.9rem; color:var(--color-secondary);">
-            PDF (Español)
+          <a href="https://doi.org/10.5281/zenodo.16888178" style="font-weight:600; font-size:0.9rem; color:var(--color-secondary);">
+            Acceder al artículo (Zenodo)
           </a>
         </article>
+
+        <!-- Artículo 4 -->
+        <article class="article-preview">
+          <div class="article-meta">ARTÍCULO DE INVESTIGACIÓN · TEXTO COMPLETO</div>
+          <h3>
+            <a href="https://doi.org/10.5281/zenodo.16732811" style="text-decoration:none; color:inherit;">
+              Del mito disperso al símbolo visible: la expresión artística de los duendes en Ecuador y la génesis de su imaginario contemporáneo
+            </a>
+          </h3>
+          <div class="article-meta">
+            <span>Centro de Estudios Culturales Emergentes – Ecuador</span> ·
+            <span class="doi-link">DOI: 10.5281/zenodo.16732811</span>
+          </div>
+          <p>
+            Estudio sobre el pasaje del duende como mito fragmentario a símbolo visible mediante expresiones artísticas contemporáneas,
+            analizando procesos de institucionalización cultural y apropiación del imaginario.
+          </p>
+          <a href="https://doi.org/10.5281/zenodo.16732811" style="font-weight:600; font-size:0.9rem; color:var(--color-secondary);">
+            Acceder al artículo (Zenodo)
+          </a>
+        </article>
+
+        <!-- Artículo 5 -->
+        <article class="article-preview">
+          <div class="article-meta">ARTÍCULO DE INVESTIGACIÓN · TEXTO COMPLETO</div>
+          <h3>
+            <a href="https://doi.org/10.5281/zenodo.17851097" style="text-decoration:none; color:inherit;">
+              Duendismo Cultural: Patrimonio Emergente, Simulacro Turístico y Autoría Disputada en Baños de Agua Santa (2013–2025)
+            </a>
+          </h3>
+          <div class="article-meta">
+            <span>Centro de Estudios Culturales Emergentes – Ecuador</span> ·
+            <span class="doi-link">DOI: 10.5281/zenodo.17851097</span>
+          </div>
+          <p>
+            Propuesta conceptual que articula duendismo cultural, patrimonio emergente y disputa de autoría en el marco de la economía simbólica
+            del turismo, con foco en Baños de Agua Santa (2013–2025).
+          </p>
+          <a href="https://doi.org/10.5281/zenodo.17851097" style="font-weight:600; font-size:0.9rem; color:var(--color-secondary);">
+            Acceder al artículo (Zenodo)
+          </a>
+        </article>
+
       </section>
     </div>
 
@@ -435,27 +500,31 @@
         <h4>Información para lectores</h4>
         <ul class="sidebar-list">
           <li><a href="#actual">Número actual</a></li>
-          <li><a href="#archivos">Archivos y volúmenes</a></li>
+          <li><a href="#articles-preview">Artículos publicados</a></li>
           <li><a href="/editorial-board/">Equipo editorial</a></li>
         </ul>
       </div>
 
       <div class="sidebar-box">
-        <h4>Volumen 0 — Documento Fundacional</h4>
+        <h4>Número actual</h4>
         <p style="font-size:0.85rem; color:#64748b;">
-          Publicación inaugural con DOI aceptado en archivo científico internacional.
-          <br><br>
-          <a href="https://doi.org/10.5281/zenodo.17888205"
-             style="color:var(--color-secondary); font-weight:600;">
-            Acceder al Volumen 0 en Zenodo
-          </a>
+          <strong>Vol. 1 · Núm. 1 (2025)</strong><br />
+          Texto completo en acceso abierto.<br />
+          Artículos disponibles vía DOI (Zenodo).
         </p>
+        <ul class="sidebar-list" style="margin-top:0.75rem;">
+          <li><a href="https://doi.org/10.5281/zenodo.17888205">10.5281/zenodo.17888205</a></li>
+          <li><a href="https://doi.org/10.5281/zenodo.17917843">10.5281/zenodo.17917843</a></li>
+          <li><a href="https://doi.org/10.5281/zenodo.16888178">10.5281/zenodo.16888178</a></li>
+          <li><a href="https://doi.org/10.5281/zenodo.16732811">10.5281/zenodo.16732811</a></li>
+          <li><a href="https://doi.org/10.5281/zenodo.17851097">10.5281/zenodo.17851097</a></li>
+        </ul>
       </div>
 
       <div class="sidebar-box">
         <h4>Indexación &amp; Archivo</h4>
         <p style="font-size:0.85rem; color:#64748b;">
-          Revista Duendismo Cultural sigue un modelo de ciencia abierta y archivo distribuido.
+          La revista sigue un modelo de ciencia abierta y archivo distribuido.
         </p>
         <p style="font-size:0.85rem;">
           Comunidad científica:
@@ -492,7 +561,7 @@
       </div>
       <div style="text-align:right;">
         <p>Publicación de Acceso Abierto Diamante.</p>
-        <p>Volumen 0 DOI: 10.5281/zenodo.17888205</p>
+        <p><strong>Vol. 1 · Núm. 1 (2025)</strong></p>
         <p>© <span id="year"></span>. Todos los derechos morales reservados.</p>
       </div>
     </div>
