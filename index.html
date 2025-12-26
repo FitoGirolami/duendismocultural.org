@@ -60,6 +60,22 @@
       line-height: 1.6;
     }
 
+    /* Accesibilidad: salto al contenido */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 16px;
+      background: #ffffff;
+      color: var(--color-primary);
+      padding: 10px 12px;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      z-index: 9999;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .skip-link:focus { top: 16px; outline: 3px solid rgba(13,148,136,.35); }
+
     .top-bar {
       background: var(--color-primary);
       color: white;
@@ -74,6 +90,7 @@
       display: flex;
       justify-content: flex-end;
       gap: 1.5rem;
+      flex-wrap: wrap;
     }
     .top-bar a { color: #cbd5e1; text-decoration: none; }
     .top-bar a:hover { color: white; }
@@ -235,7 +252,7 @@
     }
   </style>
 
-  <!-- Schema.org -->
+  <!-- Schema.org (sin “Volumen 0” / sin “preprint”) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -329,6 +346,8 @@
 
 <body>
 
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
   <div class="top-bar">
     <div class="container">
       <span>ISSN (e-ISSN): en trámite</span>
@@ -368,7 +387,7 @@
     </div>
   </section>
 
-  <main class="container grid-layout">
+  <main id="main" class="container grid-layout">
     <div class="main-content">
       <section id="scope">
         <h2>Enfoque y Alcance</h2>
@@ -493,6 +512,43 @@
         </article>
 
       </section>
+
+      <!-- NUEVO: Archivos (para que el menú funcione de verdad) -->
+      <section id="archivos" style="margin-top:3rem;">
+        <h2>Archivos</h2>
+        <div class="article-preview" style="border-bottom:none; padding-bottom:0;">
+          <div class="article-meta">NÚMEROS PUBLICADOS</div>
+          <h3 style="margin-top:0;">
+            Vol. 1 · Núm. 1 (2025) — La invención del duende en los Andes
+          </h3>
+          <p style="margin-top:0;">
+            Número actual en acceso abierto. Artículos en texto completo disponibles vía DOI (Zenodo).
+          </p>
+          <ul style="padding-left:1.2rem; margin:0;">
+            <li><a href="https://doi.org/10.5281/zenodo.17888205">10.5281/zenodo.17888205</a></li>
+            <li><a href="https://doi.org/10.5281/zenodo.17917843">10.5281/zenodo.17917843</a></li>
+            <li><a href="https://doi.org/10.5281/zenodo.16888178">10.5281/zenodo.16888178</a></li>
+            <li><a href="https://doi.org/10.5281/zenodo.16732811">10.5281/zenodo.16732811</a></li>
+            <li><a href="https://doi.org/10.5281/zenodo.17851097">10.5281/zenodo.17851097</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- NUEVO: Autores (para que el menú funcione de verdad) -->
+      <section id="autores" style="margin-top:3rem;">
+        <h2>Autores</h2>
+        <div class="article-preview" style="border-bottom:none; padding-bottom:0;">
+          <div class="article-meta">EQUIPO AUTORAL DEL NÚMERO ACTUAL</div>
+          <p style="margin-top:0;">
+            <strong>Fito Girolami</strong> · Centro de Estudios Culturales Emergentes – Ecuador<br />
+            <strong>Catalina Lucz-Ligeti</strong> · Centro de Estudios Culturales Emergentes – Ecuador
+          </p>
+          <p style="margin-top:0;">
+            La revista recibe contribuciones externas. Para envío de manuscritos: <a href="mailto:submit@duendismocultural.org">submit@duendismocultural.org</a>
+          </p>
+        </div>
+      </section>
+
     </div>
 
     <aside class="sidebar">
@@ -501,7 +557,9 @@
         <ul class="sidebar-list">
           <li><a href="#actual">Número actual</a></li>
           <li><a href="#articles-preview">Artículos publicados</a></li>
+          <li><a href="#archivos">Archivos y volúmenes</a></li>
           <li><a href="/editorial-board/">Equipo editorial</a></li>
+          <li><a href="#autores">Autores</a></li>
         </ul>
       </div>
 
