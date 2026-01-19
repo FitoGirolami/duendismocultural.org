@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+
+  <title>Origen — Juan Mondillo | Revista Duendismo Cultural</title>
+  <meta name="description" content="Origen (Juan Mondillo). Relato autobiográfico (1986–1992) sobre imagen analógica, experiencia liminal y el acto de nombrar lo invisible en Capilla del Monte. Artículo 6, Vol. 1 Núm. 1." />
+  <link rel="canonical" href="https://duendismocultural.org/articulos/origen-juan-mondillo/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Revista Duendismo Cultural" />
+  <meta property="og:title" content="Origen — Juan Mondillo" />
+  <meta property="og:description" content="Relato autobiográfico (1986–1992) sobre una imagen analógica y el proceso de nombrar una presencia no identificada en Capilla del Monte." />
+  <meta property="og:url" content="https://duendismocultural.org/articulos/origen-juan-mondillo/" />
+  <meta property="og:image" content="https://duendismocultural.org/img/og-journal-cover.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Citation meta (útil para Scholar) -->
+  <meta name="citation_journal_title" content="Revista Duendismo Cultural" />
+  <meta name="citation_issn" content="3121-2719" />
+  <meta name="citation_title" content="Origen: Relato autobiográfico sobre imagen, experiencia y el nombramiento de lo invisible en Capilla del Monte" />
+  <meta name="citation_author" content="Juan Mondillo" />
+  <meta name="citation_publication_date" content="2026" />
+  <meta name="citation_language" content="es" />
+  <meta name="citation_volume" content="1" />
+  <meta name="citation_issue" content="1" />
+  <meta name="citation_firstpage" content="1" />
+  <meta name="citation_lastpage" content="1" />
+  <meta name="citation_doi" content="10.5281/zenodo.18306513" />
+  <meta name="citation_pdf_url" content="https://doi.org/10.5281/zenodo.18306513" />
+
+  <!-- Fuentes tipográficas (mismo look del index) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --color-primary:#0f172a;
+      --color-accent:#0d9488;
+      --color-accent-dark:#0f766e;
+      --color-text-main:#1e293b;
+      --color-text-muted:#64748b;
+      --color-bg:#ffffff;
+      --color-bg-alt:#f8fafc;
+      --border-color:#e2e8f0;
+      --font-display:"Playfair Display", Georgia, serif;
+      --font-body:"Inter", system-ui, sans-serif;
+      --container-width: 920px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--font-body);
+      color:var(--color-text-main);
+      background:var(--color-bg);
+      line-height:1.7;
+      font-size:16px;
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit;text-decoration:none;transition:.2s}
+    a:hover{color:var(--color-accent);text-decoration:underline;text-decoration-thickness:2px}
+    .container{max-width:var(--container-width);margin:0 auto;padding:0 20px}
+    .top-bar{
+      background:var(--color-primary);
+      color:rgba(255,255,255,.85);
+      font-size:.75rem;
+      padding:10px 0;
+      letter-spacing:.4px;
+    }
+    .top-bar .container{
+      display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
+    }
+    header{
+      border-bottom:1px solid var(--border-color);
+      background:#fff;
+      padding:18px 0;
+      position:sticky;
+      top:0;
+      z-index:50;
+      box-shadow:0 2px 10px rgba(0,0,0,.03);
+    }
+    .head{
+      display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;
+    }
+    .brand{
+      display:flex;flex-direction:column;
+    }
+    .brand a{
+      font-family:var(--font-display);
+      font-size:1.55rem;
+      font-weight:800;
+      color:var(--color-primary);
+      line-height:1.1;
+    }
+    .brand span{
+      font-size:.78rem;
+      color:var(--color-accent);
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      margin-top:4px;
+    }
+    nav{
+      display:flex;gap:14px;flex-wrap:wrap;align-items:center;
+      font-size:.9rem;font-weight:600;
+    }
+    .btn{
+      background:var(--color-accent);
+      color:#fff !important;
+      padding:8px 14px;
+      border-radius:6px;
+      font-weight:700;
+      font-size:.85rem;
+      text-decoration:none !important;
+    }
+    .btn:hover{background:var(--color-accent-dark);transform:translateY(-1px)}
+    main{padding:34px 0 60px}
+    .crumbs{
+      font-size:.85rem;color:var(--color-text-muted);
+      margin:10px 0 18px;
+    }
+    .crumbs a{color:var(--color-text-muted)}
+    .paper{
+      background:var(--color-bg);
+      border:1px solid var(--border-color);
+      border-radius:10px;
+      padding:26px;
+    }
+    h1{
+      font-family:var(--font-display);
+      font-size:2.15rem;
+      line-height:1.2;
+      color:var(--color-primary);
+      margin:0 0 10px;
+    }
+    .subtitle{
+      font-size:1.05rem;
+      color:var(--color-text-muted);
+      margin:0 0 18px;
+    }
+    .meta{
+      display:flex;flex-wrap:wrap;gap:10px 16px;
+      font-size:.92rem;
+      color:var(--color-text-main);
+      border-top:1px solid var(--border-color);
+      border-bottom:1px solid var(--border-color);
+      padding:12px 0;
+      margin:18px 0 20px;
+    }
+    .meta strong{color:var(--color-primary)}
+    .pill{
+      font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size:.86rem;
+      color:var(--color-text-muted);
+      background:#f1f5f9;
+      padding:2px 8px;
+      border-radius:6px;
+      border:1px solid #e8eef6;
+    }
+    .actions{
+      display:flex;gap:12px;flex-wrap:wrap;align-items:center;
+      margin:10px 0 2px;
+    }
+    .link-pill{
+      font-size:.9rem;
+      color:var(--color-accent);
+      font-weight:700;
+    }
+    .btn-outline{
+      font-size:.9rem;
+      color:var(--color-text-muted);
+      border:1px solid var(--border-color);
+      padding:8px 12px;
+      border-radius:999px;
+    }
+    .btn-outline:hover{background:#f1f5f9;border-color:#cbd5e1;text-decoration:none}
+    .content{
+      margin-top:20px;
+      color:#334155;
+      font-size:1.02rem;
+      text-align:justify;
+    }
+    .content p{margin:14px 0}
+    .content h2{
+      font-family:var(--font-display);
+      color:var(--color-primary);
+      font-size:1.35rem;
+      margin:28px 0 12px;
+    }
+    .note{
+      background:var(--color-bg-alt);
+      border:1px solid var(--border-color);
+      border-radius:10px;
+      padding:14px 16px;
+      color:var(--color-text-muted);
+      margin:18px 0 0;
+      font-size:.95rem;
+    }
+    footer{
+      margin-top:40px;
+      padding:24px 0 38px;
+      border-top:1px solid var(--border-color);
+      color:var(--color-text-muted);
+      font-size:.9rem;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ScholarlyArticle",
+    "@id":"https://duendismocultural.org/articulos/origen-juan-mondillo/#article",
+    "name":"Origen: Relato autobiográfico sobre imagen, experiencia y el nombramiento de lo invisible en Capilla del Monte",
+    "headline":"Origen",
+    "description":"Relato autobiográfico (1986–1992) sobre una imagen analógica y el proceso de nombrar una presencia no identificada en Capilla del Monte. Testimonio cultural sobre experiencia, símbolo y contexto pre-digital.",
+    "inLanguage":"es",
+    "isPartOf":{
+      "@type":"PublicationIssue",
+      "@id":"https://duendismocultural.org/#issue-v1n1-2025",
+      "name":"Vol. 1 · Núm. 1 (2025)",
+      "isPartOf":{
+        "@type":"Periodical",
+        "@id":"https://duendismocultural.org/#journal",
+        "name":"Revista Duendismo Cultural",
+        "issn":"3121-2719",
+        "publisher":{
+          "@type":"Organization",
+          "name":"Centro de Estudios Culturales Emergentes – Ecuador",
+          "url":"https://estudiosculturalesemergentes.org/"
+        }
+      }
+    },
+    "author":{"@type":"Person","name":"Juan Mondillo"},
+    "datePublished":"2026",
+    "identifier":"10.5281/zenodo.18306513",
+    "sameAs":"https://doi.org/10.5281/zenodo.18306513",
+    "url":"https://duendismocultural.org/articulos/origen-juan-mondillo/",
+    "license":"https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  }
+  </script>
+</head>
+
+<body>
+  <div class="top-bar">
+    <div class="container">
+      <span>ISSN 3121-2719 • Acceso Abierto Diamante</span>
+      <span><a href="/" style="color:inherit;text-decoration:underline;">Volver al Número Actual</a></span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container head">
+      <div class="brand">
+        <a href="/">Revista Duendismo Cultural</a>
+        <span>Investigación · Arte · Memoria Situada</span>
+      </div>
+      <nav aria-label="Navegación">
+        <a href="/#actual">Número actual</a>
+        <a href="/editorial-board/">Equipo editorial</a>
+        <a class="btn" href="mailto:submit@duendismocultural.org">Enviar artículo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="crumbs">
+      <a href="/">Inicio</a> / <a href="/#articles-list">Artículos</a> / <span>Origen</span>
+    </div>
+
+    <article class="paper">
+      <h1>Origen</h1>
+      <p class="subtitle">Relato autobiográfico sobre imagen, experiencia y el nombramiento de lo invisible en Capilla del Monte</p>
+
+      <div class="meta" aria-label="Metadatos del artículo">
+        <span><strong>Autor:</strong> Juan Mondillo</span>
+        <span><strong>Sección:</strong> Relato · Autor invitado</span>
+        <span><strong>Edición:</strong> Vol. 1 · Núm. 1 (2025)</span>
+        <span><strong>Artículo:</strong> 6</span>
+        <span class="pill">DOI: 10.5281/zenodo.18306513</span>
+      </div>
+
+      <div class="actions" aria-label="Acciones">
+        <a class="link-pill" href="https://doi.org/10.5281/zenodo.18306513" target="_blank" rel="noopener">Abrir en Zenodo (PDF)</a>
+        <a class="btn-outline" href="https://zenodo.org/records/18306513" target="_blank" rel="noopener">Ver registro</a>
+      </div>
+
+      <div class="content">
+        <p>
+          Nobleza obliga y he de confesar que el verdadero origen lo mantendré un poco más en secreto. Me saltaré la parte donde todo comenzó en mi vida y daré inicio en lo que, ciertamente, puedo declarar como un segundo origen.
+        </p>
+
+        <p>
+          Corría el año 1986, año en el que aparecía en el cerro Pajarillo la famosa mancha que dio inicio a un antes y un después en Capilla del Monte, lugar de donde provengo.
+        </p>
+
+        <p>
+          En esos años, el conocimiento lo transportaba un hombre en bicicleta repartiendo fotocopias como si de un canillita se tratara. Pero en vez de enterarnos de lo que pasaba en Argentina y el mundo, terminábamos anoticiándonos de lo que acontecía en Capilla del Monte… y el cosmos. Tener acceso a un libro original en esa época era algo casi imposible y, por tanto, quienes sí podían eran elevados como si portaran la piedra filosofal del conocimiento. Aun así, recibir las gacetillas esotéricas fotocopiadas era algo que, semana tras semana, esperábamos con muchas ganas.
+        </p>
+
+        <p>
+          El fin del mundo se aproximaba con muchísima autoridad y era obligatoria la lectura de Saint Germain. Era, en ese entonces, oro en letras para todos los que visualizaban la llegada de un apocalipsis y la salvación de los extraterrestres a unos pocos. A esos pocos se los conoció como “Los Elegidos”. Aclaro que, si bien he leído la doctrina de Saint Germain, ya en ese entonces supe que no daría mi tiempo ni mi camino a esa rama del esoterismo. (Los detalles siguen guardados en mi primer origen).
+        </p>
+
+        <p>
+          Trabajaba de camarero en un bar icónico en pleno centro, en la Calle Techada de Capilla del Monte. Mis turnos eran larguísimos y lo único que me mantenía a salvo de no volverme un loco de la rutina sin sentido era la música.
+        </p>
+
+        <p>
+          Pero un día, todo cambió.
+        </p>
+
+        <p>
+          Había acompañado a una pareja de amigos a un lugar especial de mi pueblo. No diré el nombre del lugar ya que, a pesar de que se ha ido perdiendo por la constante invasión del ser humano, tengo esperanza de que lo que sucedió allí siga intacto.
+        </p>
+
+        <p>
+          Diré que fue una excursión hermosísima, llena de vida, animales, plantas, agua, bosque y absoluta serenidad.
+        </p>
+
+        <p>
+          Al mes de haber ido a ese lugar, me encontraba cumpliendo mi rol de camarero y recibo una carta de mis amigos con quienes compartimos aquel paseo. Con la carta venía adjuntada una foto.
+        </p>
+
+        <p>
+          Me contaban que, al revelar el rollo de fotos —tengan en cuenta que estoy describiendo una época donde no existía lo digital, ni internet ni IA ni nada de todo lo que hoy existe; literalmente vivíamos un mundo analógico—, en una de esas fotos, la que me estaban adjuntando con la carta, aparecía algo.
+        </p>
+
+        <p>
+          Mis amigos no tenían la menor idea de lo que en la foto se manifestaba y, ya que estamos, yo tampoco podía dilucidar qué o quién aparecía en esa imagen.
+        </p>
+
+        <p>
+          A partir de ese momento comenzó mi periplo por determinar qué cosa era lo que tan fuertemente aparecía en la fotografía. Nadie sabía nada. Todos lo veían, pero nadie, a ciencia cierta, podía decirme qué era lo que estaba allí.
+        </p>
+
+        <p>
+          Así fue que me dispuse a volver a ese lugar de donde se tomó la fotografía. Lo hice durante todo un año: de día, de tarde, por las noches, con calor, con lluvias, con frío y hasta con nieve. Pero jamás volví a ver nada. Parecía como si lo que estaba en la foto hubiera decidido desaparecer para siempre.
+        </p>
+
+        <p>
+          Pasaron los años. Llegaba 1990 y yo seguía sin saber nada de aquella presencia. No encontraba información, nadie podía explicarme qué era aquello.
+        </p>
+
+        <p>
+          Nunca me rendí y confieso que me había obsesionado. Necesitaba saber. Tenía en mis manos una prueba irrefutable de que no somos los únicos en este mundo, y mi ignorancia me impedía entender de qué se trataba aquella imagen.
+        </p>
+
+        <p>
+          Una tarde, finalizando el verano de 1992, caminaba por la plaza central de Capilla del Monte cuando un puesto artesanal me abdujo por completo. En el humilde puestito, el artesano tenía figuritas que bien podrían haber saltado de la foto que por tantos años sostuve en mi mano para posar en la feria de artesanos.
+        </p>
+
+        <p>
+          Lo primero que le pregunté, mostrándole la foto, fue:<br>
+          —¿Vos sabés lo que es esto que aparece en la imagen?
+        </p>
+
+        <p>
+          Sonrió y, con muchísima seguridad, me dijo:<br>
+          —Eso es un duende.
+        </p>
+
+        <div class="note" aria-label="Nota final del autor">
+          <strong>Nota final del autor.</strong> Este texto no busca probar nada ni convencer a nadie. Solo deja constancia de un recorrido: el paso del asombro a la pregunta, y de la imagen al símbolo. A veces, lo que aparece no necesita explicación inmediata, sino tiempo, contexto y un nombre que permita seguir pensando.
+        </div>
+
+        <div class="note" aria-label="Palabras clave" style="margin-top:12px;">
+          <strong>Palabras clave:</strong> duende · experiencia liminal · Capilla del Monte · relato autobiográfico · imagen · cultura analógica · imaginarios culturales
+        </div>
+      </div>
+    </article>
+
+    <footer>
+      <div>
+        <strong>Revista Duendismo Cultural</strong> — Centro de Estudios Culturales Emergentes – Ecuador · ISSN 3121-2719<br>
+        Licencia del artículo: CC BY-NC-ND 4.0 · DOI: <a href="https://doi.org/10.5281/zenodo.18306513" target="_blank" rel="noopener">10.5281/zenodo.18306513</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
