@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
 <head>
   <meta charset="UTF-8" />
@@ -6,30 +6,43 @@
   <meta name="theme-color" content="#0f172a" />
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
 
+  <!-- Citation metadata (home / issue landing) -->
   <meta name="citation_journal_title" content="Revista Duendismo Cultural" />
   <meta name="citation_publisher" content="Centro de Estudios Culturales Emergentes – Ecuador" />
   <meta name="citation_language" content="es" />
-  <meta name="citation_keywords" content="estudios culturales, duendismo, tradición inventada, turismo, patrimonio, Baños de Agua Santa" />
+  <meta name="citation_issn" content="3121-2719" />
+  <meta name="citation_volume" content="1" />
+  <meta name="citation_issue" content="1" />
+  <meta name="citation_publication_date" content="2025-01-01" />
+  <meta name="citation_keywords" content="estudios culturales, duendismo, tradición inventada, turismo, patrimonio, Baños de Agua Santa, leyendas, pedagogía territorial" />
 
+  <!-- Dublin Core -->
   <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
   <meta name="DC.title" content="Revista Duendismo Cultural" />
   <meta name="DC.creator" content="Centro de Estudios Culturales Emergentes – Ecuador" />
-  <meta name="DC.subject" content="Cultural Studies; Tourism; Heritage; Duendismo" />
-  <meta name="DC.description" content="Publicación académica bilingüe sobre fenómenos culturales, duendismo y turismo en Ecuador y Latinoamérica." />
+  <meta name="DC.subject" content="Cultural Studies; Tourism; Heritage; Duendismo; Territorial Pedagogy; Legends" />
+  <meta name="DC.description" content="Publicación académica bilingüe (Acceso Abierto Diamante) sobre fenómenos culturales, duendismo y turismo en Ecuador y Latinoamérica." />
   <meta name="DC.publisher" content="Centro de Estudios Culturales Emergentes – Ecuador" />
   <meta name="DC.type" content="Text.Serial.Journal" />
   <meta name="DC.rights" content="Creative Commons BY-NC-SA 4.0" />
 
-  <title>Revista Duendismo Cultural | Vol. 1 Núm. 1 (2025)</title>
-  <meta name="description" content="Revista científica bilingüe (Diamond Open Access). Estudios críticos sobre duendismo cultural, turismo y apropiación simbólica." />
+  <title>Revista Duendismo Cultural | Vol. 1 Núm. 1 (2025–2026)</title>
+  <meta name="description" content="Revista científica bilingüe (Diamond Open Access). Estudios críticos sobre duendismo cultural, turismo, apropiación simbólica, tradición inventada y pedagogía territorial." />
   <link rel="canonical" href="https://duendismocultural.org/" />
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Revista Duendismo Cultural" />
-  <meta property="og:title" content="Revista Duendismo Cultural — Vol. 1 Núm. 1 (2025)" />
-  <meta property="og:description" content="Plataforma de investigación académica sobre tradición inventada, duendismo cultural y fenómenos turísticos." />
+  <meta property="og:title" content="Revista Duendismo Cultural — Vol. 1 Núm. 1 (2025–2026)" />
+  <meta property="og:description" content="Plataforma de investigación académica sobre tradición inventada, duendismo cultural, fenómenos turísticos y pedagogía territorial." />
   <meta property="og:url" content="https://duendismocultural.org/" />
   <meta property="og:image" content="https://duendismocultural.org/img/og-journal-cover.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Revista Duendismo Cultural — Vol. 1 Núm. 1 (2025–2026)" />
+  <meta name="twitter:description" content="Investigación, arte y memoria situada: duendismo cultural, turismo, tradición inventada y pedagogía territorial." />
+  <meta name="twitter:image" content="https://duendismocultural.org/img/og-journal-cover.jpg" />
 
   <link rel="icon" href="/favicon.ico" />
 
@@ -39,19 +52,18 @@
 
   <style>
     :root {
-      /* Paleta de colores académica sobria */
-      --color-primary: #0f172a;   /* Navy profundo */
-      --color-accent: #0d9488;    /* Teal académico */
+      --color-primary: #0f172a;
+      --color-accent: #0d9488;
       --color-accent-dark: #0f766e;
       --color-text-main: #1e293b;
       --color-text-muted: #64748b;
       --color-bg: #ffffff;
       --color-bg-alt: #f8fafc;
       --border-color: #e2e8f0;
-      
+
       --font-display: "Playfair Display", Georgia, serif;
       --font-body: "Inter", system-ui, sans-serif;
-      
+
       --container-width: 1140px;
     }
 
@@ -68,8 +80,7 @@
     }
 
     a { text-decoration: none; color: inherit; transition: 0.2s; }
-    
-    /* Utility & Layout */
+
     .container {
       max-width: var(--container-width);
       margin: 0 auto;
@@ -87,10 +98,9 @@
     }
     .skip-link:focus { top: 20px; }
 
-    /* Top Bar (Barra técnica superior) */
     .top-bar {
       background: var(--color-primary);
-      color: rgba(255,255,255,0.8);
+      color: rgba(255,255,255,0.85);
       font-size: 0.75rem;
       padding: 8px 0;
       letter-spacing: 0.5px;
@@ -99,9 +109,9 @@
       display: flex;
       justify-content: flex-end;
       gap: 20px;
+      flex-wrap: wrap;
     }
 
-    /* Header Principal */
     header {
       background: var(--color-bg);
       border-bottom: 1px solid var(--border-color);
@@ -116,6 +126,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 20px;
     }
 
     .journal-branding {
@@ -141,7 +152,6 @@
       margin-top: 5px;
     }
 
-    /* Navegación */
     nav ul {
       list-style: none;
       display: flex;
@@ -149,6 +159,8 @@
       margin: 0;
       padding: 0;
       align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
     }
 
     nav a {
@@ -165,16 +177,16 @@
       border-radius: 4px;
       font-weight: 600;
       font-size: 0.85rem;
+      display: inline-block;
     }
     .btn-submit:hover { background: var(--color-accent-dark); transform: translateY(-1px); }
 
-    /* Hero Section */
     .hero {
       background: linear-gradient(to bottom, #ffffff 0%, #f1f5f9 100%);
       padding: 4rem 0 5rem 0;
       border-bottom: 1px solid var(--border-color);
     }
-    
+
     .hero-meta {
       font-family: var(--font-body);
       font-size: 0.85rem;
@@ -201,20 +213,18 @@
     .hero-desc {
       font-size: 1.1rem;
       color: var(--color-text-muted);
-      max-width: 750px;
+      max-width: 780px;
       margin: 0;
     }
 
-    /* Layout Grid */
     .grid-layout {
       display: grid;
-      grid-template-columns: 3fr 1fr; /* Columna ancha + Sidebar */
+      grid-template-columns: 3fr 1fr;
       gap: 4rem;
       margin-top: 4rem;
       margin-bottom: 6rem;
     }
 
-    /* Secciones */
     h2 {
       font-family: var(--font-display);
       font-size: 1.5rem;
@@ -225,7 +235,6 @@
       margin-bottom: 2rem;
     }
 
-    /* Artículos (Estilo Card Limpio) */
     .article-preview {
       margin-bottom: 3rem;
       padding-bottom: 2.5rem;
@@ -251,7 +260,11 @@
       margin: 0.5rem 0 1rem 0;
     }
     .article-preview h3 a { color: var(--color-primary); }
-    .article-preview h3 a:hover { color: var(--color-accent); text-decoration: underline; text-decoration-thickness: 2px; }
+    .article-preview h3 a:hover {
+      color: var(--color-accent);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
 
     .article-meta-row {
       font-size: 0.9rem;
@@ -259,15 +272,16 @@
       margin-bottom: 1rem;
     }
     .article-meta-row strong { color: var(--color-primary); }
-    
+
     .doi-pill {
-      font-family: monospace;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
       font-size: 0.8rem;
       color: var(--color-text-muted);
       background: #f1f5f9;
       padding: 2px 6px;
       border-radius: 4px;
       margin-left: 8px;
+      display: inline-block;
     }
 
     .article-abstract {
@@ -281,6 +295,7 @@
       display: flex;
       gap: 15px;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     .btn-text {
@@ -300,10 +315,10 @@
       padding: 6px 12px;
       border-radius: 20px;
       transition: 0.2s;
+      display: inline-block;
     }
     .btn-doi:hover { background: #f1f5f9; border-color: #cbd5e1; }
 
-    /* Sidebar */
     .sidebar-box {
       background: #fff;
       border: 1px solid var(--border-color);
@@ -328,7 +343,6 @@
     .sidebar-list a { color: var(--color-text-muted); display: block; padding: 4px 0; }
     .sidebar-list a:hover { color: var(--color-accent); transform: translateX(5px); }
 
-    /* Footer */
     footer {
       background: var(--color-primary);
       color: #94a3b8;
@@ -346,13 +360,12 @@
       gap: 3rem;
     }
 
-    /* Responsive */
     @media (max-width: 900px) {
       .grid-layout { grid-template-columns: 1fr; }
-      .header-inner { flex-direction: column; text-align: center; gap: 20px; }
-      nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; }
+      .header-inner { flex-direction: column; text-align: center; }
+      nav ul { justify-content: center; gap: 15px; }
       .hero h1 { font-size: 2.2rem; }
-      .footer-content { flex-direction: column; }
+      .footer-content { flex-direction: column; text-align: left; }
     }
   </style>
 
@@ -365,6 +378,8 @@
         "@id": "https://duendismocultural.org/#journal",
         "name": "Revista Duendismo Cultural",
         "alternateName": "Journal of Cultural Duendismo",
+        "url": "https://duendismocultural.org/",
+        "issn": "3121-2719",
         "publisher": { "@id": "https://estudiosculturalesemergentes.org/#organization" },
         "editor": [
           { "@type": "Person", "name": "Fito Girolami", "affiliation": "Centro de Estudios Culturales Emergentes – Ecuador" },
@@ -376,80 +391,76 @@
       },
       {
         "@type": "PublicationIssue",
-        "@id": "https://duendismocultural.org/#issue-v1n1-2025",
-        "name": "Vol. 1 · Núm. 1 (2025)",
+        "@id": "https://duendismocultural.org/#issue-v1n1-2025-2026",
+        "name": "Vol. 1 · Núm. 1 (2025–2026)",
         "isPartOf": { "@id": "https://duendismocultural.org/#journal" },
-        "datePublished": "2025",
+        "datePublished": "2025-01-01",
+        "temporalCoverage": "2025/2026",
         "inLanguage": "es"
       },
+
       {
         "@type": "ScholarlyArticle",
         "@id": "https://duendismocultural.org/articulos/fenomenologia-reaccion-autoral/#article",
+        "headline": "Fenomenología de la Reacción Autoral frente a la Apropiación Turística en Baños de Agua Santa",
         "name": "Fenomenología de la Reacción Autoral frente a la Apropiación Turística en Baños de Agua Santa",
         "url": "https://duendismocultural.org/articulos/fenomenologia-reaccion-autoral/",
         "mainEntityOfPage": "https://duendismocultural.org/articulos/fenomenologia-reaccion-autoral/",
+        "author": [
+          { "@type": "Person", "name": "Fito Girolami", "affiliation": "Centro de Estudios Culturales Emergentes – Ecuador" },
+          { "@type": "Person", "name": "Catalina Lucz-Ligeti", "affiliation": "Centro de Estudios Culturales Emergentes – Ecuador" }
+        ],
         "identifier": "10.5281/zenodo.17888205",
         "sameAs": "https://doi.org/10.5281/zenodo.17888205",
-        "isPartOf": { "@id": "https://duendismocultural.org/#issue-v1n1-2025" },
+        "isPartOf": { "@id": "https://duendismocultural.org/#issue-v1n1-2025-2026" },
         "datePublished": "2025",
         "inLanguage": "es"
       },
 
-      /* ===== NUEVO: Artículo 6 (Relato) — Juan Mondillo ===== */
       {
         "@type": "ScholarlyArticle",
         "@id": "https://duendismocultural.org/articulos/origen-juan-mondillo/#article",
+        "headline": "Origen: Relato autobiográfico sobre imagen, experiencia y el nombramiento de lo invisible en Capilla del Monte",
         "name": "Origen: Relato autobiográfico sobre imagen, experiencia y el nombramiento de lo invisible en Capilla del Monte",
         "url": "https://duendismocultural.org/articulos/origen-juan-mondillo/",
         "mainEntityOfPage": "https://duendismocultural.org/articulos/origen-juan-mondillo/",
         "author": { "@type": "Person", "name": "Juan Mondillo" },
         "identifier": "10.5281/zenodo.18306513",
         "sameAs": "https://doi.org/10.5281/zenodo.18306513",
-        "isPartOf": { "@id": "https://duendismocultural.org/#issue-v1n1-2025" },
+        "isPartOf": { "@id": "https://duendismocultural.org/#issue-v1n1-2025-2026" },
         "datePublished": "2026",
         "inLanguage": "es"
       },
-      /* ===== FIN NUEVO ===== */
 
-      /* ===== NUEVO: Artículo 7 — Metamorfosis de la Sombra ===== */
       {
         "@type": "ScholarlyArticle",
         "@id": "https://duendismocultural.org/articulos/metamorfosis-sombra-duende-arte/#article",
+        "headline": "Metamorfosis de la Sombra: La Figura del Duende en el Arte, desde el Genius Loci hasta la Ostensión Digital",
         "name": "Metamorfosis de la Sombra: La Figura del Duende en el Arte, desde el Genius Loci hasta la Ostensión Digital",
         "url": "https://duendismocultural.org/articulos/metamorfosis-sombra-duende-arte/",
         "mainEntityOfPage": "https://duendismocultural.org/articulos/metamorfosis-sombra-duende-arte/",
-        "author": {
-          "@type": "Person",
-          "name": "Fito Girolami",
-          "affiliation": "Centro de Estudios Culturales Emergentes – Ecuador"
-        },
+        "author": { "@type": "Person", "name": "Fito Girolami", "affiliation": "Centro de Estudios Culturales Emergentes – Ecuador" },
         "identifier": "10.5281/zenodo.18307134",
         "sameAs": "https://doi.org/10.5281/zenodo.18307134",
-        "isPartOf": { "@id": "https://duendismocultural.org/#issue-v1n1-2025" },
+        "isPartOf": { "@id": "https://duendismocultural.org/#issue-v1n1-2025-2026" },
         "datePublished": "2026",
         "inLanguage": "es"
       },
-      /* ===== FIN NUEVO ===== */
 
-      /* ===== NUEVO: Artículo 8 — Etnografía del Miedo ===== */
       {
         "@type": "ScholarlyArticle",
         "@id": "https://duendismocultural.org/articulos/etnografia-miedo-duende-ecuador/#article",
+        "headline": "Etnografía del Miedo: La Figura del Duende como Advertencia, Control Social y Regulación Territorial en la Narrativa Oral Ecuatoriana",
         "name": "Etnografía del Miedo: La Figura del Duende como Advertencia, Control Social y Regulación Territorial en la Narrativa Oral Ecuatoriana",
         "url": "https://duendismocultural.org/articulos/etnografia-miedo-duende-ecuador/",
         "mainEntityOfPage": "https://duendismocultural.org/articulos/etnografia-miedo-duende-ecuador/",
-        "author": {
-          "@type": "Person",
-          "name": "Fito Girolami",
-          "affiliation": "Centro de Estudios Culturales Emergentes – Ecuador"
-        },
+        "author": { "@type": "Person", "name": "Fito Girolami", "affiliation": "Centro de Estudios Culturales Emergentes – Ecuador" },
         "identifier": "10.5281/zenodo.18307162",
         "sameAs": "https://doi.org/10.5281/zenodo.18307162",
-        "isPartOf": { "@id": "https://duendismocultural.org/#issue-v1n1-2025" },
+        "isPartOf": { "@id": "https://duendismocultural.org/#issue-v1n1-2025-2026" },
         "datePublished": "2026",
         "inLanguage": "es"
       },
-      /* ===== FIN NUEVO ===== */
 
       {
         "@type": "Organization",
@@ -471,6 +482,8 @@
       <span>ISSN 3121-2719</span>
       <span>•</span>
       <span>Acceso Abierto Diamante</span>
+      <span>•</span>
+      <span>Vol. 1 Núm. 1 (2025–2026)</span>
       <span>•</span>
       <a href="/login" style="color:inherit; text-decoration:underline;">Iniciar Sesión</a>
     </div>
@@ -497,23 +510,26 @@
   <section class="hero" id="actual">
     <div class="container">
       <div class="hero-meta">
-        Vol. 1 Núm. 1 (2025)
+        Vol. 1 Núm. 1 (2025–2026)
       </div>
       <h1>La Invención del Duende en los Andes</h1>
       <p class="hero-desc">
-        Estudios críticos sobre turismo, apropiación simbólica y tradición inventada. Documentando las tensiones entre creación artística y masificación en Baños de Agua Santa.
+        Estudios críticos sobre turismo, apropiación simbólica, tradición inventada y pedagogía territorial.
+        Documentando tensiones entre creación artística, memoria situada y circulación contemporánea en Baños de Agua Santa.
       </p>
     </div>
   </section>
 
   <main id="main" class="container grid-layout">
-    
+
     <div class="main-content">
-      
+
       <section id="scope" style="margin-bottom: 3rem;">
         <h2>Enfoque y Alcance</h2>
         <p style="color: var(--color-text-main); font-size: 1.05rem;">
-          La <em>Revista Duendismo Cultural</em> proporciona un foro académico de rigor para la discusión de fenómenos culturales emergentes. Priorizamos investigaciones que utilicen metodologías mixtas para abordar la genealogía de símbolos locales, la sociología del turismo y el patrimonio inmaterial en disputa.
+          La <em>Revista Duendismo Cultural</em> ofrece un foro académico de rigor para la discusión de fenómenos culturales emergentes.
+          Priorizamos investigaciones con metodologías mixtas que trabajan la genealogía de símbolos locales, sociología del turismo,
+          memoria situada y patrimonio inmaterial en disputa.
         </p>
       </section>
 
@@ -532,7 +548,8 @@
             <span class="doi-pill">DOI: 10.5281/zenodo.17888205</span>
           </div>
           <p class="article-abstract">
-            Análisis de la reacción autoral frente a la apropiación turística del símbolo contemporáneo del duende en Baños de Agua Santa, examinando tensiones entre creación artística y explotación comercial bajo el marco de "tradición inventada".
+            Análisis de la reacción autoral frente a la apropiación turística del símbolo contemporáneo del duende en Baños de Agua Santa,
+            examinando tensiones entre creación artística y explotación comercial bajo el marco de tradición inventada.
           </p>
           <div class="action-row">
             <a href="/articulos/fenomenologia-reaccion-autoral/" class="btn-text">Leer Artículo</a>
@@ -552,7 +569,8 @@
             <span class="doi-pill">DOI: 10.5281/zenodo.17917843</span>
           </div>
           <p class="article-abstract">
-            Lectura crítica del fenómeno de los duendes desde la teoría de la tradición inventada: genealogía, aparición de copias y mecanismos de legitimación institucional.
+            Lectura crítica del fenómeno de los duendes desde la teoría de la tradición inventada: genealogía, aparición de copias y
+            mecanismos de legitimación institucional.
           </p>
           <div class="action-row">
             <a href="/articulos/tradicion-inventada-banos/" class="btn-text">Leer Artículo</a>
@@ -617,7 +635,6 @@
           </div>
         </article>
 
-        <!-- ===================== NUEVO ARTÍCULO 6 ===================== -->
         <article class="article-preview">
           <div class="article-type">Relato · Autor invitado</div>
           <h3>
@@ -630,16 +647,15 @@
             <span class="doi-pill">DOI: 10.5281/zenodo.18306513</span>
           </div>
           <p class="article-abstract">
-            Relato autobiográfico (1986–1992) sobre una imagen analógica y el proceso de nombrar una presencia no identificada en Capilla del Monte. Un testimonio cultural sobre experiencia, símbolo y contexto de circulación del conocimiento en la era pre-digital, incorporado al corpus editorial de la Revista Duendismo Cultural.
+            Relato autobiográfico (1986–1992) sobre una imagen analógica y el proceso de nombrar una presencia no identificada en Capilla del Monte.
+            Testimonio cultural sobre experiencia, símbolo y circulación del conocimiento en la era pre-digital.
           </p>
           <div class="action-row">
             <a href="/articulos/origen-juan-mondillo/" class="btn-text">Leer Artículo</a>
             <a href="https://doi.org/10.5281/zenodo.18306513" target="_blank" rel="noopener" class="btn-doi">Zenodo / PDF</a>
           </div>
         </article>
-        <!-- =================== FIN NUEVO ARTÍCULO 6 =================== -->
 
-        <!-- ===================== NUEVO ARTÍCULO 7 ===================== -->
         <article class="article-preview">
           <div class="article-type">Artículo de Investigación · Marco Teórico</div>
           <h3>
@@ -652,16 +668,16 @@
             <span class="doi-pill">DOI: 10.5281/zenodo.18307134</span>
           </div>
           <p class="article-abstract">
-            Análisis interdisciplinario de la figura del duende como significante cultural y artístico liminal, rastreando su evolución desde los espíritus domésticos clásicos y la marginalia medieval hasta su resignificación contemporánea como mercancía simbólica y objeto de ostensión digital.
+            Análisis interdisciplinario de la figura del duende como significante cultural y artístico liminal, rastreando su evolución desde
+            los espíritus domésticos clásicos y la marginalia medieval hasta su resignificación contemporánea como mercancía simbólica y objeto
+            de ostensión digital.
           </p>
           <div class="action-row">
             <a href="/articulos/metamorfosis-sombra-duende-arte/" class="btn-text">Leer Artículo</a>
             <a href="https://doi.org/10.5281/zenodo.18307134" target="_blank" rel="noopener" class="btn-doi">Zenodo / PDF</a>
           </div>
         </article>
-        <!-- =================== FIN NUEVO ARTÍCULO 7 =================== -->
 
-        <!-- ===================== NUEVO ARTÍCULO 8 ===================== -->
         <article class="article-preview">
           <div class="article-type">Artículo de Investigación · Estudio Territorial</div>
           <h3>
@@ -674,20 +690,44 @@
             <span class="doi-pill">DOI: 10.5281/zenodo.18307162</span>
           </div>
           <p class="article-abstract">
-            Estudio etnográfico comparativo sobre la figura del duende en la tradición oral ecuatoriana, analizada como dispositivo simbólico de advertencia, regulación conductual y transmisión intergeneracional en distintos territorios del país.
+            Estudio etnográfico comparativo sobre la figura del duende en la tradición oral ecuatoriana, leída como dispositivo simbólico de
+            advertencia, regulación conductual y transmisión intergeneracional en distintos territorios del país.
           </p>
           <div class="action-row">
             <a href="/articulos/etnografia-miedo-duende-ecuador/" class="btn-text">Leer Artículo</a>
             <a href="https://doi.org/10.5281/zenodo.18307162" target="_blank" rel="noopener" class="btn-doi">Zenodo / PDF</a>
           </div>
         </article>
-        <!-- =================== FIN NUEVO ARTÍCULO 8 =================== -->
+
+        <!-- ===================== NUEVO ARTÍCULO (Leyendas / Pedagogía Territorial) ===================== -->
+        <article class="article-preview">
+          <div class="article-type">Artículo de Investigación · Pedagogía Territorial</div>
+          <h3>
+            <a href="/articulos/leyendas-pedagogia-territorial/">
+              Las leyendas de Baños de Agua Santa como pedagogía territorial: memoria, enseñanza simbólica y convivencia con un territorio vivo
+            </a>
+          </h3>
+          <div class="article-meta-row">
+            <strong>Girolami, F.</strong>
+            <span class="doi-pill">Zenodo / DOI: asignación editorial en curso</span>
+          </div>
+          <p class="article-abstract">
+            Investigación sobre leyendas documentadas de Baños de Agua Santa leídas como dispositivos pedagógicos del territorio.
+            Identifica patrones de enseñanza simbólica vinculados a memoria colectiva, regulación del riesgo, ética situada y convivencia con
+            un paisaje de agencia activa.
+          </p>
+          <div class="action-row">
+            <a href="/articulos/leyendas-pedagogia-territorial/" class="btn-text">Leer Artículo</a>
+            <a href="https://zenodo.org/communities/centro-de-estudios-culturales-emergentes-ecuador" target="_blank" rel="noopener" class="btn-doi">Zenodo Community</a>
+          </div>
+        </article>
+        <!-- =================== FIN NUEVO ARTÍCULO =================== -->
 
       </section>
     </div>
 
     <aside class="sidebar">
-      
+
       <div class="sidebar-box">
         <h4>Navegar</h4>
         <ul class="sidebar-list">
@@ -702,7 +742,8 @@
         <h4>Información</h4>
         <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 1rem;">
           <strong>Para Lectores:</strong><br>
-          Esta revista provee acceso abierto inmediato a su contenido, bajo el principio de hacer disponible gratuitamente la investigación al público.
+          Esta revista ofrece acceso abierto inmediato a su contenido, sosteniendo la circulación pública del conocimiento
+          bajo el modelo Diamante.
         </p>
         <ul class="sidebar-list">
           <li><a href="/instrucciones-autores">Instrucciones para Autores</a></li>
@@ -715,15 +756,15 @@
         <p style="font-size:0.85rem; color:#64748b;">
           Repositorio Oficial:
         </p>
-        <a href="https://zenodo.org/communities/centro-de-estudios-culturales-emergentes-ecuador" target="_blank" class="btn-doi" style="display:block; text-align:center; margin-top:5px;">
+        <a href="https://zenodo.org/communities/centro-de-estudios-culturales-emergentes-ecuador" target="_blank" rel="noopener" class="btn-doi" style="display:block; text-align:center; margin-top:5px;">
           Zenodo Community
         </a>
       </div>
 
       <div class="sidebar-box" style="text-align:center;">
         <h4 style="border:none; text-align: left;">Licencia</h4>
-        <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
-          <img alt="Licencia Creative Commons" style="border-width:0; width:120px; opacity:0.8;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+        <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">
+          <img alt="Licencia Creative Commons" style="border-width:0; width:120px; opacity:0.85;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
         </a>
         <p style="font-size:0.75rem; color:#94a3b8; margin-top:10px; line-height:1.4;">
           CC BY-NC-SA 4.0 Internacional.
@@ -746,7 +787,7 @@
       <div style="text-align:right;">
         <p>Publicación de Acceso Abierto Diamante.</p>
         <p>ISSN 3121-2719</p>
-        <p>© <span id="year">2025</span>. Todos los derechos reservados.</p>
+        <p>© <span id="year"></span>. Publicación bajo licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>.</p>
       </div>
     </div>
   </footer>
@@ -755,6 +796,6 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
-</body> 
+</body>
 </html>
 
