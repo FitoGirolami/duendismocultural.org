@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://duendismocultural.org/sitemap.xml
